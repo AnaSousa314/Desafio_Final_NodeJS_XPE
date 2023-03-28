@@ -1,2 +1,7 @@
 2023-03-28T13:50:38.273Z [ livraria_api ] info POST /cliente - {"clienteId":1,"nome":"João","email":"joao@email.com","senha":"1234","telefone":"(99) 9 9999-9999","endereco":"Rua A, Bairro Cidade Nova"}
 2023-03-28T14:06:35.441Z [ livraria_api ] info PUT /cliente - {"clienteId":1,"nome":"João Silva","email":"joao@email.com","senha":"1234","telefone":"(99) 9 9999-9999","endereco":"Rua A, Bairro Cidade Nova"}
+2023-03-28T15:28:48.216Z [ livraria_api ] error DELETE  - vendas is not associated to clientes!
+2023-03-28T15:37:52.385Z [ livraria_api ] error DELETE  - Possui uma venda
+2023-03-28T15:40:36.872Z [ livraria_api ] error DELETE  - Possui uma venda
+2023-03-28T15:43:44.113Z [ livraria_api ] error DELETE  - O cliente_id informado não existe!
+2023-03-28T15:45:08.447Z [ livraria_api ] error PUT  - O cliente_id informado não existe!

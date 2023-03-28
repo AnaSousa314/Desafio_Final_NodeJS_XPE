@@ -1,9 +1,10 @@
 import Sequelize from "sequelize";
 import db from "../config/instances/postgres/postgres.js";
+import Autor from "./autor.model.js";
 
-const Cliente = db.define('clientes',
+const Livro = db.define('livros',
 {
-  clienteId: {
+  livroId: {
     type: Sequelize.INTEGER,
     autoIncrement: true,
     allowNull: false,
@@ -15,27 +16,21 @@ const Cliente = db.define('clientes',
     allowNull: false
   },
 
-  email: {
-    type: Sequelize.STRING,
+  valor: {
+    type: Sequelize.FLOAT,
     allowNull: false,
-    unique: true
   },
 
-  senha: {
-    type: Sequelize.STRING,
+  estoque: {
+    type: Sequelize.INTEGER,
     allowNull: false
   },
-
-  telefone: {
-    type: Sequelize.STRING,
-    allowNull: false
-  },
-  endereco: {
-    type: Sequelize.STRING,
-    allowNull: false
-  },
+  // autorId: {
+  //   type: Sequelize.INTEGER,
+  //   allowNull: false
+  // }
 }, {underscored: true});
 
+Livro.belongsTo(Autor, {foreignKey: "autorId"});
 
-
-export default Cliente;
+export default Livro;

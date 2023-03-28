@@ -29,7 +29,23 @@ async function getClient(id) {
   }
 }
 
+async function deleteClient(id) {
+  try {
+    await Cliente.destroy({
+      where: {
+        clienteId: id
+      }
+    })
+    
+  } catch (error) {
+    throw error;
+  }
+}
+
+
 export default {
   insertClient,
-  updateClient
+  updateClient,
+  deleteClient,
+  getClient
 }

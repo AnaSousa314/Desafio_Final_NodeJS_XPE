@@ -1,9 +1,9 @@
 import Sequelize from "sequelize";
 import db from "../config/instances/postgres/postgres.js";
 
-const Cliente = db.define('clientes',
+const Autor = db.define('autores',
 {
-  clienteId: {
+  autorId: {
     type: Sequelize.INTEGER,
     autoIncrement: true,
     allowNull: false,
@@ -21,21 +21,10 @@ const Cliente = db.define('clientes',
     unique: true
   },
 
-  senha: {
-    type: Sequelize.STRING,
-    allowNull: false
-  },
-
   telefone: {
-    type: Sequelize.STRING,
-    allowNull: false
-  },
-  endereco: {
     type: Sequelize.STRING,
     allowNull: false
   },
 }, {underscored: true});
 
-
-
-export default Cliente;
+export default Autor;

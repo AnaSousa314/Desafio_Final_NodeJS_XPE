@@ -34,8 +34,21 @@ async function updateClient(req, res, next) {
   }
 }
 
+
+async function deleteClient(req, res, next) {
+  try {
+    await ClienteService.deleteClient(req.params.id)
+    res.status(204)
+    res.end()
+    logger.info(`DELETE /cliente/${req.params.id}`)
+  } catch (error) {
+    next(error)
+  }
+}
+
 export default {
   createClient,
-  updateClient
+  updateClient,
+  deleteClient
 }
 
