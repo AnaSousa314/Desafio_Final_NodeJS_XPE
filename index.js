@@ -2,7 +2,7 @@ import express from "express";
 import winston from "winston";
 import cors from "cors";
 
-import sequelize from "./config/instances/postgres.js"
+import sequelize from "./config/instances/postgres/postgres.js"
 
 const { combine, timestamp, label, printf } = winston.format;
 const myFormat = printf(({ level, message, label, timestamp })=>{

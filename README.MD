@@ -41,7 +41,7 @@ O desafio consiste em desenvolver uma API para controle de uma livraria online. 
 
 <br>  
 
-- [] **02 - Criação do banco de dados NoSQL:**  
+- [🦉] **02 - Criação do banco de dados NoSQL:**  
       - A propriedade “livroId” serve para manter uma referência do id do livro do banco relacional. As propriedades “descricao”, “páginas” e “editora” dizem respeito ao livro em questão. A propriedade “avaliacoes" é uma lista de avaliações realizadas pelos clientes, possuindo o nome do cliente, a nota dada por ele e a descrição da sua avaliação.    
       <img src="./nosql.png">
 
