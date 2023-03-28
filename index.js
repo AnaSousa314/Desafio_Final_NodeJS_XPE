@@ -3,6 +3,7 @@ import winston from "winston";
 import cors from "cors";
 
 import clientRouter from "./routes/cliente.route.js";
+import authorRouter from "./routes/autor.route.js";
 
 import sequelize from "./config/instances/postgres/postgres.js"
 
@@ -28,6 +29,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use("/cliente", clientRouter);
+app.use("/autor", authorRouter);
 
 app.get("/", (req,res) => {
   res.send("Deu certo")

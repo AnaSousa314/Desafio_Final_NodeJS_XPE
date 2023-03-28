@@ -10,3 +10,7 @@
 2023-03-28T16:07:16.724Z [ livraria_api ] error GET  - Argument passed to findByPk is invalid: [object Object]
 2023-03-28T16:07:37.714Z [ livraria_api ] info GET /cliente/1
 2023-03-28T16:08:13.289Z [ livraria_api ] info GET /cliente/1
+2023-03-28T16:51:40.538Z [ livraria_api ] info POST /autor - {"autorId":4,"nome":"Pedro","email":"pedro@email.com","telefone":"(11) 1 1111-1111"}
+2023-03-28T17:00:27.860Z [ livraria_api ] info PUT /autor - {"autorId":4,"nome":"Pedro Souza","email":"pedro@email.com","telefone":"(11) 1 1111-1111"}
+2023-03-28T17:00:34.950Z [ livraria_api ] error PUT  - Autor ID, nome, email e telefone são obrigatórios!
+2023-03-28T17:00:42.251Z [ livraria_api ] error PUT  - O autor_id informado não existe!

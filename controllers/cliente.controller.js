@@ -1,4 +1,4 @@
-import ClienteService from "../services/cliente.services.js";
+import ClienteService from "../services/cliente.service.js";
 
 async function createClient(req, res, next) {
   try {
