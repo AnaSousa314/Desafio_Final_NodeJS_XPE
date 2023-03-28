@@ -42,10 +42,21 @@ async function deleteClient(id) {
   }
 }
 
+async function getClients() {
+  try {
+    return await Cliente.findAll({
+      attributes: ['clienteId', 'nome', 'email', 'telefone', 'endereco']
+    })
+  } catch (error) {
+    throw error;
+  }
+}
+
 
 export default {
   insertClient,
   updateClient,
   deleteClient,
-  getClient
+  getClient,
+  getClients
 }

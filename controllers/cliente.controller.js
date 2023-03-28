@@ -46,9 +46,20 @@ async function deleteClient(req, res, next) {
   }
 }
 
+async function getClients(req, res, next) {
+  try {
+    res.status(200)
+    res.send(await ClienteService.getClients());
+    logger.info("GET /cliente")
+  } catch (error) {
+    next(error)
+  }
+}
+
 export default {
   createClient,
   updateClient,
-  deleteClient
+  deleteClient,
+  getClients
 }
 

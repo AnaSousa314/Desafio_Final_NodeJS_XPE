@@ -62,7 +62,7 @@ O desafio consiste em desenvolver uma API para controle de uma livraria online. 
            - Método HTTP e URL:  DELETE - http://localhost:3000/cliente/{clienteId}  
            - Parâmetros: id do cliente passado diretamente na URL, exemplo de um id de valor 15 passado na URL: http://localhost:3000/cliente/15
 
-       - [] 04 - Consultar os clientes cadastrados:  
+       - [😎] 04 - Consultar os clientes cadastrados:  
            - retornar todos os clientes, com todas as informações exceto o campo de senha, que não deve ser retornado neste endpoint.
            - Método HTTP e URL: GET - http://localhost:3000/cliente 
           

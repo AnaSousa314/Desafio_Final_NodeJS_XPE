@@ -5,3 +5,4 @@
 2023-03-28T15:40:36.872Z [ livraria_api ] error DELETE  - Possui uma venda
 2023-03-28T15:43:44.113Z [ livraria_api ] error DELETE  - O cliente_id informado não existe!
 2023-03-28T15:45:08.447Z [ livraria_api ] error PUT  - O cliente_id informado não existe!
+2023-03-28T15:59:37.386Z [ livraria_api ] info GET /cliente
