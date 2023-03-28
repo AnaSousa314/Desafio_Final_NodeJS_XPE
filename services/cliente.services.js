@@ -32,9 +32,14 @@ async function getClients() {
   return await ClienteRepository.getClients();
 }
 
+async function getClient(id) {
+  return await ClienteRepository.getClient(id);
+}
+
 export default {
   createClient,
   updateClient,
   deleteClient,
-  getClients
+  getClients,
+  getClient
 }

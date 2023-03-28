@@ -23,7 +23,9 @@ async function updateClient(client) {
 
 async function getClient(id) {
   try {
-    return await Cliente.findByPk(id);
+    return await Cliente.findByPk(id, {
+      attributes: ['clienteId', 'nome', 'email', 'telefone', 'endereco']
+    });
   } catch (error) {
     throw error;
   }

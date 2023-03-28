@@ -6,3 +6,7 @@
 2023-03-28T15:43:44.113Z [ livraria_api ] error DELETE  - O cliente_id informado não existe!
 2023-03-28T15:45:08.447Z [ livraria_api ] error PUT  - O cliente_id informado não existe!
 2023-03-28T15:59:37.386Z [ livraria_api ] info GET /cliente
+2023-03-28T16:05:54.124Z [ livraria_api ] info GET /cliente/1
+2023-03-28T16:07:16.724Z [ livraria_api ] error GET  - Argument passed to findByPk is invalid: [object Object]
+2023-03-28T16:07:37.714Z [ livraria_api ] info GET /cliente/1
+2023-03-28T16:08:13.289Z [ livraria_api ] info GET /cliente/1

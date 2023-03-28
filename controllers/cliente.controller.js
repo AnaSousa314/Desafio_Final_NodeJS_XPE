@@ -56,10 +56,21 @@ async function getClients(req, res, next) {
   }
 }
 
+async function getClient(req, res, next) {
+  try {
+    res.status(200)
+    res.send(await ClienteService.getClient(req.params.id));
+    logger.info(`GET /cliente/${req.params.id}`)
+  } catch (error) {
+    next(error)
+  }
+}
+
 export default {
   createClient,
   updateClient,
   deleteClient,
-  getClients
+  getClients,
+  getClient
 }
 
