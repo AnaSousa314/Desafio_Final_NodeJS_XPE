@@ -2,6 +2,8 @@ import express from "express";
 import winston from "winston";
 import cors from "cors";
 
+import clientRouter from "./routes/cliente.route.js";
+
 import sequelize from "./config/instances/postgres/postgres.js"
 
 const { combine, timestamp, label, printf } = winston.format;
@@ -24,6 +26,8 @@ global.logger = winston.createLogger({
 const app = express();
 app.use(express.json());
 app.use(cors());
+
+app.use("/cliente", clientRouter);
 
 app.get("/", (req,res) => {
   res.send("Deu certo")

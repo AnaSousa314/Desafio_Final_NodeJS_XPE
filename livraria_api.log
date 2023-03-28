@@ -1,0 +1,1 @@
+2023-03-28T13:50:38.273Z [ livraria_api ] info POST /cliente - {"clienteId":1,"nome":"João","email":"joao@email.com","senha":"1234","telefone":"(99) 9 9999-9999","endereco":"Rua A, Bairro Cidade Nova"}

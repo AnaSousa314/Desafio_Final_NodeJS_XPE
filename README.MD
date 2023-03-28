@@ -49,7 +49,7 @@ O desafio consiste em desenvolver uma API para controle de uma livraria online. 
 
 - [] **03 - Desenvolvimento dos endpoints:**   
      - [] ***01 - Enpoints do Cliente***:  
-       - [] 01 - Cadastrar um cliente:  
+       - [😎] 01 - Cadastrar um cliente:  
            - Método HTTP e URL: POST - http://localhost:3000/cliente  
            - Parâmetros: objeto JSON com o nome, e-mail, senha, telefone e endereço do cliente.
 
