@@ -53,7 +53,7 @@ O desafio consiste em desenvolver uma API para controle de uma livraria online. 
            - Método HTTP e URL: POST - http://localhost:3000/cliente  
            - Parâmetros: objeto JSON com o nome, e-mail, senha, telefone e endereço do cliente.
 
-       - [] 02 - Atualização de um cliente:  
+       - [😎] 02 - Atualização de um cliente:  
            - Método HTTP e URL: PUT - http://localhost:3000/cliente  
            - Parâmetros:  objeto JSON com o id do cliente que será atualizado, o nome, email, senha, telefone e endereço que serão atualizados.  
 
