@@ -100,11 +100,11 @@ O desafio consiste em desenvolver uma API para controle de uma livraria online. 
 
 
      - [] ***03 - Enpoints do Livro***:  
-       - [] 01 - Cadastrar um livro:  
+       - [😎] 01 - Cadastrar um livro:  
            - Método HTTP e URL: POST - http://localhost:3000/livro  
            - Parâmetros: objeto JSON com o nome, valor e id do autor, que são utilizados para salvar o registro no PostgreSQL. Os demais registros que são inseridos na collection “livroInfo” serão inseridos em outro endpoint. 
 
-       - [] 02 - Atualização de um livro:  
+       - [😎] 02 - Atualização de um livro:  
            - Método HTTP e URL: PUT - http://localhost:3000/livro  
            - Parâmetros:   objeto JSON com o id do livro que será atualizado, o valor do livro que será atualizado. O endpoint não deve permitir que o nome e autor do livro sejam alterados, evitando assim possíveis inconsistências.   
 

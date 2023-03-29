@@ -25,3 +25,19 @@
 2023-03-29T16:11:47.908Z [ livraria_api ] info GET /autor/2
 2023-03-29T16:14:23.844Z [ livraria_api ] info GET /autor/2
 2023-03-29T16:15:36.731Z [ livraria_api ] info GET /autor/2
+2023-03-29T16:38:39.978Z [ livraria_api ] info POST /autor - {"autorId":6,"nome":"Pedro","email":"pedro@email.com","telefone":"(11) 1 1111-1111"}
+2023-03-29T16:39:05.635Z [ livraria_api ] error POST  - Nome, valor, estoque e autor_id são obrigatórios!
+2023-03-29T16:39:43.753Z [ livraria_api ] error POST  - Nome, valor, estoque e autor_id são obrigatórios!
+2023-03-29T16:40:05.528Z [ livraria_api ] error POST  - loggers is not defined
+2023-03-29T16:40:45.028Z [ livraria_api ] error POST  - loggers is not defined
+2023-03-29T16:53:00.465Z [ livraria_api ] error POST  - next is not defined
+2023-03-29T16:55:06.323Z [ livraria_api ] error PUT  - Proibido mudar o nome ou o autor do livro!
+2023-03-29T16:55:41.211Z [ livraria_api ] error PUT  - Livro ID, valor e estoque são obrigatórios!
+2023-03-29T16:55:58.002Z [ livraria_api ] error PUT  - WHERE parameter "autor_id" has invalid "undefined" value
+2023-03-29T16:56:52.858Z [ livraria_api ] info PUT /livro - undefined
+2023-03-29T16:58:01.374Z [ livraria_api ] info PUT /livro - undefined
+2023-03-29T16:58:58.549Z [ livraria_api ] info POST /cliente - {"clienteId":10,"nome":"Fulano Silva","email":"fulano@email.com","senha":"1234","telefone":"(99) 9 9999-9999","endereco":"Rua A, Bairro Cidade Nova"}
+2023-03-29T16:59:27.932Z [ livraria_api ] info PUT /cliente - {"clienteId":10,"nome":"Fulano Sousa","email":"fulano@email.com","telefone":"(99) 9 9999-9999","endereco":"Rua A, Bairro Cidade Nova"}
+2023-03-29T17:01:47.495Z [ livraria_api ] info PUT /livro - undefined
+2023-03-29T17:04:38.193Z [ livraria_api ] info PUT /livro - null
+2023-03-29T17:05:25.948Z [ livraria_api ] info PUT /livro - {"livroId":8,"nome":"Setor Público","valor":"150","estoque":3,"autorId":6}
