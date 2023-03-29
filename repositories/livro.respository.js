@@ -49,9 +49,23 @@ async function getBookByAuthorId(authorId) {
 }
 
 
+async function deleteBook(id) {
+  try {
+    await Livro.destroy({
+      where:{
+        livroId: id
+      }
+    });
+  } catch (error) {
+    throw error;
+  }
+}
+
 
 export default {
   insertBook,
   getBookByAuthorId,
-  updateBook
+  updateBook,
+  getBook,
+  deleteBook
 }

@@ -108,10 +108,10 @@ O desafio consiste em desenvolver uma API para controle de uma livraria online. 
            - Método HTTP e URL: PUT - http://localhost:3000/livro  
            - Parâmetros:   objeto JSON com o id do livro que será atualizado, o valor do livro que será atualizado. O endpoint não deve permitir que o nome e autor do livro sejam alterados, evitando assim possíveis inconsistências.   
 
-       - [] 03 - Exclusão de um livro:  
-           - Antes de excluir um livro, verificar se existem vendasrealizadas para ele. Caso exista, bloquear a exclusão.
-           - Método HTTP e URL:  DELETE - http://localhost:3000/autor/{livroId}  
-           - Parâmetros: id do autor passado diretamente na URL, exemplo de um id de valor 15 passado na URL: http://localhost:3000/autor/15
+       - [😎] 03 - Exclusão de um livro:  
+           - Antes de excluir um livro, verificar se existem vendas realizadas para ele. Caso exista, bloquear a exclusão.
+           - Método HTTP e URL:  DELETE - http://localhost:3000/livro/{livroId}  
+           - Parâmetros: id do livro passado diretamente na URL, exemplo de um id de valor 15 passado na URL: http://localhost:3000/livro/15
 
 
        - [] 04 - Consultar um livro em específico:  

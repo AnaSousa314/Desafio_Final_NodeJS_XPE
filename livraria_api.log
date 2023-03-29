@@ -41,3 +41,17 @@
 2023-03-29T17:01:47.495Z [ livraria_api ] info PUT /livro - undefined
 2023-03-29T17:04:38.193Z [ livraria_api ] info PUT /livro - null
 2023-03-29T17:05:25.948Z [ livraria_api ] info PUT /livro - {"livroId":8,"nome":"Setor Público","valor":"150","estoque":3,"autorId":6}
+2023-03-29T17:09:46.596Z [ livraria_api ] error PUT  - O livro_id informado não existe!
+2023-03-29T19:54:19.864Z [ livraria_api ] info GET /autor
+2023-03-29T19:55:19.103Z [ livraria_api ] info POST /autor - {"autorId":4,"nome":"José SIlva","email":"jose@email.com","telefone":"83996565550"}
+2023-03-29T19:55:42.687Z [ livraria_api ] info POST /livro - {"livroId":7,"nome":"Serviço Público","valor":"145.25","estoque":"4","autorId":4}
+2023-03-29T19:56:15.681Z [ livraria_api ] error PUT  - Livro ID, valor e estoque são obrigatórios!
+2023-03-29T19:56:46.060Z [ livraria_api ] info PUT /livro - {"livroId":7,"nome":"Serviço Público","valor":"150","estoque":"4","autorId":4}
+2023-03-29T19:59:22.640Z [ livraria_api ] info PUT /livro - {"livroId":7,"nome":"Serviço Público","valor":"150","estoque":"4","autorId":4}
+2023-03-29T20:00:29.250Z [ livraria_api ] info PUT /livro - {"livroId":7,"nome":"Serviço Público","valor":"150","estoque":"4","autorId":4}
+2023-03-29T20:01:08.928Z [ livraria_api ] info PUT /livro - {"livroId":7,"nome":"Serviço Público","valor":"150","estoque":"4","autorId":4}
+2023-03-29T20:04:23.065Z [ livraria_api ] info PUT /livro - {"livroId":7,"nome":"Serviço Público","valor":"150","estoque":"4","autorId":4}
+2023-03-29T20:09:00.299Z [ livraria_api ] info PUT /livro - {"livroId":7,"nome":"Serviço Público","valor":"150","estoque":"4","autorId":4}
+2023-03-29T20:09:14.720Z [ livraria_api ] info PUT /livro - {"livroId":7,"nome":"Serviço Público","valor":"150.75","estoque":"4","autorId":4}
+2023-03-29T20:09:36.811Z [ livraria_api ] info PUT /livro - {"livroId":7,"nome":"Serviço Público","valor":"150.75","estoque":"4","autorId":4}
+2023-03-29T20:21:28.861Z [ livraria_api ] info DELETE /livro/7
