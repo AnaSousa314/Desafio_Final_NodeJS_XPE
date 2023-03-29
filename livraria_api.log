@@ -21,3 +21,7 @@
 2023-03-29T15:45:25.770Z [ livraria_api ] error DELETE  - Possui uma venda
 2023-03-29T15:47:11.668Z [ livraria_api ] info DELETE /cliente/9
 2023-03-29T15:56:00.640Z [ livraria_api ] info DELETE /autor/5
+2023-03-29T16:08:45.229Z [ livraria_api ] info GET /autor
+2023-03-29T16:11:47.908Z [ livraria_api ] info GET /autor/2
+2023-03-29T16:14:23.844Z [ livraria_api ] info GET /autor/2
+2023-03-29T16:15:36.731Z [ livraria_api ] info GET /autor/2

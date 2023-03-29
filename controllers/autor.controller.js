@@ -33,6 +33,26 @@ async function updateAuthor(req, res, next) {
   }
 }
 
+async function getAuthors(req, res, next) {
+  try {
+    res.status(200)
+    res.send(await AutorService.getAuthors());
+    logger.info("GET /autor")
+  } catch (error) {
+    next(error);
+  }
+}
+
+async function getAuthor(req, res, next) {
+  try {
+    res.status(200)
+    res.send(await AutorService.getAuthor(req.params.id));
+    logger.info(`GET /autor/${req.params.id}`)
+  } catch (error) {
+    next(error);
+  }
+}
+
 async function deleteAuthor(req, res, next) {
   try {
     await AutorService.deleteAuthor(req.params.id);
@@ -47,5 +67,7 @@ async function deleteAuthor(req, res, next) {
 export default {
   createAuthor,
   updateAuthor,
-  deleteAuthor
+  deleteAuthor,
+  getAuthors,
+  getAuthor
 }

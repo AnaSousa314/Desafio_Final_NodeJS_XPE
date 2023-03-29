@@ -29,6 +29,14 @@ async function getAuthor(id) {
   }
 }
 
+async function getAuthors() {
+  try {
+    return await Autor.findAll();
+  } catch (error) {
+    throw error;
+  }
+}
+
 async function deleteAuthor(id) {
   try {
     await Autor.destroy({
@@ -45,5 +53,7 @@ export default {
   insertAuthor,
   updateAuthor,
   getAuthor,
-  deleteAuthor
+  deleteAuthor,
+  getAuthors,
+  getAuthor
 }

@@ -12,6 +12,14 @@ async function updateAuthor(author) {
   throw new Error("O autor_id informado não existe!");
 }
 
+async function getAuthors() {
+  return await AutorRespository.getAuthors();
+}
+
+async function getAuthor(id) {
+  return await AutorRespository.getAuthor(id);
+}
+
 async function deleteAuthor(id) {
   let existsAuthor = await AutorRespository.getAuthor(id);
 
@@ -32,5 +40,7 @@ async function deleteAuthor(id) {
 export default {
   createAuthor,
   updateAuthor,
-  deleteAuthor
+  deleteAuthor,
+  getAuthors,
+  getAuthor
 }
