@@ -33,7 +33,19 @@ async function updateAuthor(req, res, next) {
   }
 }
 
+async function deleteAuthor(req, res, next) {
+  try {
+    await AutorService.deleteAuthor(req.params.id);
+    res.status(204)
+    res.end()
+    logger.info(`DELETE /autor/${req.params.id}`)
+  } catch (error) {
+   next(error); 
+  }
+}
+
 export default {
   createAuthor,
-  updateAuthor
+  updateAuthor,
+  deleteAuthor
 }

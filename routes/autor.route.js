@@ -5,5 +5,6 @@ const router = express.Router();
 
 router.post("/", AutorController.createAuthor);
 router.put("/", AutorController.updateAuthor);
+router.delete("/:id", AutorController.deleteAuthor);
 
 export default router;

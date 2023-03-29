@@ -29,8 +29,21 @@ async function getAuthor(id) {
   }
 }
 
+async function deleteAuthor(id) {
+  try {
+    await Autor.destroy({
+      where: {
+        autorId: id
+      }
+    })
+  } catch (error) {
+    throw error;
+  }
+}
+
 export default {
   insertAuthor,
   updateAuthor,
-  getAuthor
+  getAuthor,
+  deleteAuthor
 }

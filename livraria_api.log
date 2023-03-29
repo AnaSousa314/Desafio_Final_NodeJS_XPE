@@ -14,3 +14,10 @@
 2023-03-28T17:00:27.860Z [ livraria_api ] info PUT /autor - {"autorId":4,"nome":"Pedro Souza","email":"pedro@email.com","telefone":"(11) 1 1111-1111"}
 2023-03-28T17:00:34.950Z [ livraria_api ] error PUT  - Autor ID, nome, email e telefone são obrigatórios!
 2023-03-28T17:00:42.251Z [ livraria_api ] error PUT  - O autor_id informado não existe!
+2023-03-29T15:32:43.128Z [ livraria_api ] error DELETE  - Possui uma venda
+2023-03-29T15:32:50.984Z [ livraria_api ] info GET /cliente
+2023-03-29T15:33:03.892Z [ livraria_api ] error DELETE  - Possui uma venda
+2023-03-29T15:42:54.100Z [ livraria_api ] error DELETE  - Possui uma venda
+2023-03-29T15:45:25.770Z [ livraria_api ] error DELETE  - Possui uma venda
+2023-03-29T15:47:11.668Z [ livraria_api ] info DELETE /cliente/9
+2023-03-29T15:56:00.640Z [ livraria_api ] info DELETE /autor/5

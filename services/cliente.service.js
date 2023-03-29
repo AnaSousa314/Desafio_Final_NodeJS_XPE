@@ -13,6 +13,14 @@ async function updateClient(client) {
   throw new Error("O cliente_id informado não existe!")
 }
 
+async function getClients() {
+  return await ClienteRepository.getClients();
+}
+
+async function getClient(id) {
+  return await ClienteRepository.getClient(id);
+}
+
 async function deleteClient(id) {
   let existsClient = await ClienteRepository.getClient(id);
 
@@ -22,18 +30,12 @@ async function deleteClient(id) {
 
   let existsSale = await VendasRespository.getSaleByClientId(id);
 
-  if (existsSale) {
+  console.log(existsSale)
+
+  if (existsSale.length > 0) {
     throw new Error("Possui uma venda")
   }
   await ClienteRepository.deleteClient(id);
-}
-
-async function getClients() {
-  return await ClienteRepository.getClients();
-}
-
-async function getClient(id) {
-  return await ClienteRepository.getClient(id);
 }
 
 export default {

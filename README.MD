@@ -83,7 +83,7 @@ O desafio consiste em desenvolver uma API para controle de uma livraria online. 
            - Método HTTP e URL: PUT - http://localhost:3000/autor  
            - Parâmetros:   objeto JSON com o id do autor que será atualizado, o nome, e-mail e telefone que serão atualizados. 
 
-       - [] 03 - Exclusão de um autor:  
+       - [😎] 03 - Exclusão de um autor:  
            - Antes de excluir um autor, verificar se existem livros cadastradas para ele. Caso exista, bloquear a exclusão.
            - Método HTTP e URL:  DELETE - http://localhost:3000/autor/{autorId}  
            - Parâmetros: id do autor passado diretamente na URL, exemplo de um id de valor 15 passado na URL: http://localhost:3000/autor/15

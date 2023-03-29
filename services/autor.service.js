@@ -1,3 +1,4 @@
+import LivroRepository from "../repositories/livro.respository.js"
 import AutorRespository from "../repositories/autor.respository.js";
 
 async function createAuthor(author) {
@@ -11,7 +12,25 @@ async function updateAuthor(author) {
   throw new Error("O autor_id informado não existe!");
 }
 
+async function deleteAuthor(id) {
+  let existsAuthor = await AutorRespository.getAuthor(id);
+
+  if (!existsAuthor) {
+    throw new Error("O cliente_id informado não existe!")
+  }
+
+  let existsBook = await LivroRepository.getBookByAuthorId(id)
+
+  console.log(existsBook)
+
+  if (existsBook.length > 0) {
+    throw new Error("Possui livro(s) cadastrados")
+  }
+  await AutorRespository.deleteAuthor(id)
+}
+
 export default {
   createAuthor,
-  updateAuthor
+  updateAuthor,
+  deleteAuthor
 }

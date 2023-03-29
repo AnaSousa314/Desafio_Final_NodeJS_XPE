@@ -35,17 +35,6 @@ async function updateClient(req, res, next) {
 }
 
 
-async function deleteClient(req, res, next) {
-  try {
-    await ClienteService.deleteClient(req.params.id)
-    res.status(204)
-    res.end()
-    logger.info(`DELETE /cliente/${req.params.id}`)
-  } catch (error) {
-    next(error)
-  }
-}
-
 async function getClients(req, res, next) {
   try {
     res.status(200)
@@ -61,6 +50,17 @@ async function getClient(req, res, next) {
     res.status(200)
     res.send(await ClienteService.getClient(req.params.id));
     logger.info(`GET /cliente/${req.params.id}`)
+  } catch (error) {
+    next(error)
+  }
+}
+
+async function deleteClient(req, res, next) {
+  try {
+    await ClienteService.deleteClient(req.params.id)
+    res.status(204)
+    res.end()
+    logger.info(`DELETE /cliente/${req.params.id}`)
   } catch (error) {
     next(error)
   }
