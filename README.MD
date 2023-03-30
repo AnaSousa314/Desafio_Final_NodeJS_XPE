@@ -134,7 +134,7 @@ O desafio consiste em desenvolver uma API para controle de uma livraria online. 
            - Método HTTP e URL: POST – http://localhost:3000/livro/info 
            - Parâmetros: objeto JSON com o “livroId” do livro que terá as informações cadastradas e as propriedades a serem salvas no MongoDB.
 
-       - [] 08 - Atualizar informações do livro:   
+       - [😎] 08 - Atualizar informações do livro:   
            - Método HTTP e URL: PUT – http://localhost:3000/livro/info 
            - Parâmetros: objeto JSON com o “livroId” do livro que terá as informações atualizadas, e as propriedades a serem salvas no MongoDB.
 

@@ -15,6 +15,24 @@ async function createBookInfo(req, res, next){
   }
 }
 
+async function updateBookInfo(req, res, next) {
+  try {
+    let bookInfo =  req.body;
+
+    if (!bookInfo.livroId) {
+      throw new Error("Livro ID é obrigatório!");
+    }
+
+    await LivroInfoService.updateBookInfo(bookInfo);
+    res.status(200);
+    res.send(bookInfo);
+    loggers.info(`PUT /livro/info - ${JSON.stringify(bookInfo)}`)
+  } catch (error) {
+    next(error);
+  }
+}
+
 export default {
-  createBookInfo
+  createBookInfo,
+  updateBookInfo
 }

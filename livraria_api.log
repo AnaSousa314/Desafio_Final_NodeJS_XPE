@@ -67,3 +67,4 @@
 2023-03-30T13:51:02.491Z [ livraria_api ] info GET /livro
 2023-03-30T14:01:08.045Z [ livraria_api ] info GET /livro
 2023-03-30T14:01:32.183Z [ livraria_api ] info GET /livro
+2023-03-30T14:14:25.557Z [ livraria_api ] error PUT  - loggers is not defined

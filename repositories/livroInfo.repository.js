@@ -36,7 +36,7 @@ async function updateBookInfo(bookInfo) {
   try {
     const mongoose = await connect();
     const LivroInfo = mongoose.model("LivroInfo", LivroInfoSchema);
-    await LivroInfo.findOneAndUpdate({_id: bookInfo.id}, bookInfo);
+    await LivroInfo.findOneAndUpdate({livroId: bookInfo.livroId}, bookInfo);
   } catch (error) {
     throw error;
   }

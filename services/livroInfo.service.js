@@ -16,11 +16,16 @@ async function createBookInfoAvaliacoes(avaliacao, bookInfoId) {
   await LivroInfoRepository.createBookInfoAvaliacoes(avaliacao, bookInfoId);
 }
 
+async function updateBookInfo(bookId) {
+  await LivroInfoRepository.updateBookInfo(bookId);
+}
+
 
 
 export default {
   createBookInfo,
   getBookInfo,
   getBookInfos,
-  createBookInfoAvaliacoes
+  createBookInfoAvaliacoes,
+  updateBookInfo
 }
