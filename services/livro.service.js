@@ -1,5 +1,6 @@
 import LivroRespository from "../repositories/livro.respository.js";
 import VendasRespository from "../repositories/vendas.respository.js";
+import LivroInfoService from "../services/livroInfo.service.js";
 
 async function createBook(book) {
   return await LivroRespository.insertBook(book)
@@ -26,8 +27,20 @@ async function deleteBook(id){
   await LivroRespository.deleteBook(id);
 }
 
+async function getBook(bookId) {
+  let book = await LivroRespository.getBook(bookId);
+  book.info = await LivroInfoService.getBookInfo(bookId);
+  return book;
+}
+
+async function getBooks() {
+  return await LivroRespository.getBooks();
+}
+
 export default {
   createBook,
   updateBook,
-  deleteBook
+  deleteBook,
+  getBook,
+  getBooks
 }

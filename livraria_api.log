@@ -55,3 +55,13 @@
 2023-03-29T20:09:14.720Z [ livraria_api ] info PUT /livro - {"livroId":7,"nome":"Serviço Público","valor":"150.75","estoque":"4","autorId":4}
 2023-03-29T20:09:36.811Z [ livraria_api ] info PUT /livro - {"livroId":7,"nome":"Serviço Público","valor":"150.75","estoque":"4","autorId":4}
 2023-03-29T20:21:28.861Z [ livraria_api ] info DELETE /livro/7
+2023-03-30T12:47:24.126Z [ livraria_api ] error POST  - The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2023-03-30T12:49:08.022Z [ livraria_api ] error POST  - The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2023-03-30T12:49:59.967Z [ livraria_api ] error POST  - The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2023-03-30T12:52:06.374Z [ livraria_api ] error POST  - res.stattus is not a function
+2023-03-30T12:55:35.800Z [ livraria_api ] error POST  - Cast to ObjectId failed for value "5" (type number) at path "_id" for model "LivroInfo"
+2023-03-30T13:39:56.309Z [ livraria_api ] info DELETE /livro/8
+2023-03-30T13:40:07.641Z [ livraria_api ] info POST /livro - {"livroId":9,"nome":"Setor Público","valor":"15.99","estoque":3,"autorId":6}
+2023-03-30T13:44:27.728Z [ livraria_api ] info GET /livro/1
+2023-03-30T13:50:11.424Z [ livraria_api ] error GET  - findAll is not defined
+2023-03-30T13:51:02.491Z [ livraria_api ] info GET /livro

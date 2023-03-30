@@ -114,13 +114,13 @@ O desafio consiste em desenvolver uma API para controle de uma livraria online. 
            - Parâmetros: id do livro passado diretamente na URL, exemplo de um id de valor 15 passado na URL: http://localhost:3000/livro/15
 
 
-       - [] 04 - Consultar um livro em específico:  
+       - [😎] 04 - Consultar um livro em específico:  
            - Pegar o id do livro e retornar um objeto JSON com suas informações.
            - Método HTTP e URL:   GET - http://localhost:3000/livro/{livroId}  
            - Observações: retornar as informações do PostgreSQL e do MongoDB. Este endpoint seria utilizado na aplicação web quando o usuário selecionasse um livro em específico na listagem, sendo redirecionado para a página dele, com todas as suas informações e avaliações. 
            - Parâmetros:  id do livro passado diretamente na URL, exemplo de um id de valor 15 passado na URL: http://localhost:3000/livro/15  
 
-       - [] 05 - Consultar os livros cadastrados:  
+       - [😎] 05 - Consultar os livros cadastrados:  
            - Retornar todos os livros, com todas as informações.
            - Método HTTP e URL: GET - http://localhost:3000/autor 
            - Observações: este endpoint e o próximo devem retornar somente os dados do banco relacional, pois eles serão utilizados somente na listagem dos livros. Caso o usuário queira detalhar mais informações a respeito de um livro em específico, estes dados são obtidos no endpoint anterior.
@@ -130,7 +130,7 @@ O desafio consiste em desenvolver uma API para controle de uma livraria online. 
            - Método HTTP e URL: GET - http://localhost:3000/livro?autorId={autorId} 
            - Parâmetros: id do livro passado diretamente na URL, exemplo de um id de valor 15 passado na URL: http:/ localhost:3000/livro?autorId=15 (Sugestão: pode ser usada a mesma estrutura do endpoint do item 5, que consulta todos os livros, só que aqui nesse caso ele receberia um parâmetro para filtrar o autor).
 
-       - [] 07 - Cadastrar informações do livro:   
+       - [😎] 07 - Cadastrar informações do livro:   
            - Método HTTP e URL: POST – http://localhost:3000/livro/info 
            - Parâmetros: objeto JSON com o “livroId” do livro que terá as informações cadastradas e as propriedades a serem salvas no MongoDB.
 

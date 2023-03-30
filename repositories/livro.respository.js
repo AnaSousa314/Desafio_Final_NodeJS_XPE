@@ -25,7 +25,15 @@ async function updateBook(book) {
 
 async function getBook(id) {
   try {
-    return await Livro.findByPk(id);
+    return await Livro.findByPk(id, {raw: true});
+  } catch (error) {
+    throw error;
+  }
+}
+
+async function getBooks() {
+  try {
+    return await Livro.findAll();
   } catch (error) {
     throw error;
   }
@@ -67,5 +75,6 @@ export default {
   getBookByAuthorId,
   updateBook,
   getBook,
-  deleteBook
+  deleteBook,
+  getBooks
 }

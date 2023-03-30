@@ -5,6 +5,7 @@ import cors from "cors";
 import clientRouter from "./routes/cliente.route.js";
 import authorRouter from "./routes/autor.route.js";
 import bookRouter from "./routes/livro.route.js";
+import bookInfoRouter from "./routes/livroInfo.route.js";
 
 import sequelize from "./config/instances/postgres/postgres.js"
 
@@ -32,6 +33,7 @@ app.use(cors());
 app.use("/cliente", clientRouter);
 app.use("/autor", authorRouter);
 app.use("/livro", bookRouter);
+app.use("/livro/info", bookInfoRouter);
 
 app.get("/", (req,res) => {
   res.send("Deu certo")

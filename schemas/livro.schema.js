@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
-import AvaliacaoSchema from "./avaliacao.sechema.js";
+import AvaliacaoSchema from "./avaliacao.schema.js";
 
 const LivroSchema = new mongoose.Schema(
   {
-    livroId: Integer,
+    livroId: Number,
     descricao: String,
-    paginas: Integer,
+    paginas: Number,
     editora: String,
     avaliacoes:[AvaliacaoSchema]
   }, {collection: "livroInfo"}

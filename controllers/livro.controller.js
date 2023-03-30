@@ -49,8 +49,30 @@ async function deleteBook(req, res, next) {
   }
 }
 
+async function getBook(req, res, next) {
+  try {
+    res.status(200)
+    res.send(await LivroService.getBook(req.params.id))
+    logger.info(`GET /livro/${req.params.id}`);
+  } catch (error) {
+    throw error;
+  }
+}
+
+async function getBooks(req, res, next) {
+  try {
+    res.status(200);
+    res.send(await LivroService.getBooks());
+    logger.info("GET /livro")
+  } catch (error) {
+    next(error)
+  }
+}
+
 export default {
   createBook,
   updateBook,
-  deleteBook
+  deleteBook,
+  getBook,
+  getBooks
 }
