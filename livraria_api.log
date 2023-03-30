@@ -113,3 +113,17 @@
 2023-03-30T16:04:48.688Z [ livraria_api ] info POST /livro/info/avaliacao - {"livroId":9,"avaliacoes":{"nome":"João Silva","nota":5,"avaliacao":"Livro muito bom"}}
 2023-03-30T16:07:30.824Z [ livraria_api ] info POST /livro/9/avaliacao
 2023-03-30T16:28:49.651Z [ livraria_api ] info DELETE /livro/info/:id/avaliacao/:index
+2023-03-30T19:37:29.147Z [ livraria_api ] error POST  - O cliente_id informado não existe
+2023-03-30T19:37:55.202Z [ livraria_api ] error POST  - O cliente_id informado não existe
+2023-03-30T19:38:30.947Z [ livraria_api ] info POST /venda - {"vendaId":16,"data":"2000-01-19","clienteId":6,"livroId":8,"valor":"90"}
+2023-03-30T19:44:25.389Z [ livraria_api ] info POST /venda - {"vendaId":17,"data":"2000-01-19","clienteId":6,"livroId":8,"valor":"90"}
+2023-03-30T19:56:33.580Z [ livraria_api ] info GET /venda/17
+2023-03-30T19:58:02.687Z [ livraria_api ] error GET  - Argument passed to findByPk is invalid: [object Object]
+2023-03-30T19:58:20.920Z [ livraria_api ] info GET /venda/17
+2023-03-30T20:01:45.353Z [ livraria_api ] info GET /venda - Lista Vendas
+2023-03-30T20:06:03.568Z [ livraria_api ] info GET /venda - Lista Vendas
+2023-03-30T20:06:19.832Z [ livraria_api ] info GET /venda - Lista Vendas
+2023-03-30T20:08:33.484Z [ livraria_api ] info GET /venda - Lista Vendas
+2023-03-30T20:08:48.075Z [ livraria_api ] info GET /venda - Lista Vendas
+2023-03-30T20:09:03.698Z [ livraria_api ] info GET /venda - Lista Vendas
+2023-03-30T20:17:56.164Z [ livraria_api ] info GET /venda - Lista Vendas

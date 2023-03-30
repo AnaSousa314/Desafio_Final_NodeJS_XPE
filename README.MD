@@ -99,7 +99,7 @@ O desafio consiste em desenvolver uma API para controle de uma livraria online. 
            <br><br>  
 
 
-     - [] ***03 - Enpoints do Livro***:  
+     - [🌌] ***03 - Enpoints do Livro***:  
        - [😎] 01 - Cadastrar um livro:  
            - Método HTTP e URL: POST - http://localhost:3000/livro  
            - Parâmetros: objeto JSON com o nome, valor e id do autor, que são utilizados para salvar o registro no PostgreSQL. Os demais registros que são inseridos na collection “livroInfo” serão inseridos em outro endpoint. 
@@ -151,32 +151,32 @@ O desafio consiste em desenvolver uma API para controle de uma livraria online. 
            - Parâmetros: id do livro que terá a avaliação excluída e o índice da avaliação que será excluída (como é um array, o primeiro elemento é o 0). Exemplo de um id de livro 15 e índice da avaliação 0 passado na URL: http://localhost:3000/livro/15/avaliacao/0
            <br><br>  
 
-     - [] ***03 - Enpoints da Venda***:  
-       - [] 01 - Cadastrar uma venda:  
+     - [😎] ***04 - Enpoints da Venda***:  
+       - [😎] 01 - Cadastrar uma venda:  
            - Método HTTP e URL: POST - - http://localhost:3000/venda  
            - Parâmetros:  objeto JSON com a data em que a venda foi realizada, o id do cliente que comprou o livro e o id do livro comprado. O valor da venda neste endpoint é buscada da tabela do livro e inserida no registro da venda. A ideia desta ação é salvar o valor exato do livro no momento da venda, evitando que futuras alterações no valor de um livro impacte nas vendas já realizadas daquele livro.  
            - Observação: antes de cadastrar a venda é necessário verificar se o livro tem estoque maior que zero. Se tiver, o endpoint deve permitir a inserção do registro e deve atualizar o estoque do livro, diminuindo em uma unidade. Se não tiver estoque, um erro deve ser retornado ao usuário informando o que ocorreu.
 
-       - [] 02 - Consultar um livro em específico:  
+       - [😎] 02 - Consultar um venda em específico:  
            - Pegar o id  da venda e retornar um objeto JSON com suas informações.
            - Método HTTP e URL:   GET - - http://localhost:3000/venda/{vendaId}   
            - Parâmetros:   id da venda passada diretamente na URL, exemplo de um id de valor 15 passado na URL: http://localhost:3000/venda/15  
 
-       - [] 03 - Consultar as vendas:  
+       - [😎] 03 - Consultar as vendas:  
            - Retornar todos os vendas.
            - Método HTTP e URL: GET - http://localhost:3000/venda
 
-       - [] 04 -  Consultar as vendas de um cliente em específico:  
+       - [😎] 04 -  Consultar as vendas de um cliente em específico:  
            - Pegar o id do cliente na URL e retornar uma lista das suas vendas, sendo cada venda representado por um objeto JSON com todas as propriedades.
            - Método HTTP e URL: GET - http://localhost:3000/venda?clienteId={clienteId} 
            - Parâmetros: id do venda passado diretamente na URL, exemplo de um id de valor 15 passado na URL:  http://localhost:3000/venda?clienteId=15 (Sugestão: pode ser usada a mesma estrutura do endpoint do item 3, que consulta todas as vendas, só que aqui nesse caso ele receberia um parâmetro para filtrar o cliente).  
 
-       - [] 05 -  Consultar as vendas de um livro em específico:  
+       - [😎] 05 -  Consultar as vendas de um livro em específico:  
            - Pegar o id do livro na URL e retornar uma lista das suas vendas, sendo cada venda representado por um objeto JSON com todas as propriedades.
            - Método HTTP e URL: GET - http://localhost:3000/venda?livroId={livroId} 
            - Parâmetros: id do venda passado diretamente na URL, exemplo de um id de valor 15 passado na URL:   http://localhost:3000/venda?livroId=15 (Sugestão: pode ser usada a mesma estrutura do endpoint do item 3, que consulta todas as vendas, só que aqui nesse caso ele receberia um parâmetro para filtrar o livro).
 
-       - [] 06 -  Consultar as vendas de um autor em específico:  
+       - [😎] 06 -  Consultar as vendas de um autor em específico:  
            - Pegar o id do livro na URL e retornar uma lista das suas vendas, sendo cada venda representado por um objeto JSON com todas as propriedades.
            - Método HTTP e URL: GET - http://localhost:3000/venda?autorId={autorId} 
            - Parâmetros: id do livro passado diretamente na URL, exemplo de um id de valor 15 passado na URL:   http://localhost:3000/venda?livroId=15 (Sugestão: pode ser usada a mesma estrutura do endpoint do item 3, que consulta todas as vendas, só que aqui nesse caso ele receberia um parâmetro para filtrar o livro).

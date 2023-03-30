@@ -6,8 +6,9 @@ import clientRouter from "./routes/cliente.route.js";
 import authorRouter from "./routes/autor.route.js";
 import bookRouter from "./routes/livro.route.js";
 import bookInfoRouter from "./routes/livroInfo.route.js";
+import saleRouter from "./routes/venda.route.js";
 
-import sequelize from "./config/instances/postgres/postgres.js"
+import sequelize from "./config/instances/postgres/postgres.js";
 
 const { combine, timestamp, label, printf } = winston.format;
 const myFormat = printf(({ level, message, label, timestamp })=>{
@@ -34,6 +35,7 @@ app.use("/cliente", clientRouter);
 app.use("/autor", authorRouter);
 app.use("/livro", bookRouter);
 app.use("/livro/info", bookInfoRouter);
+app.use("/venda", saleRouter);
 
 app.get("/", (req,res) => {
   res.send("Deu certo")
