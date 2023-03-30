@@ -20,12 +20,15 @@ async function updateBookInfo(bookId) {
   await LivroInfoRepository.updateBookInfo(bookId);
 }
 
-
+async function deleteBookInfo(bookId) {
+  await LivroInfoRepository.deleteBookInfo(bookId);
+}
 
 export default {
   createBookInfo,
   getBookInfo,
   getBookInfos,
   createBookInfoAvaliacoes,
-  updateBookInfo
+  updateBookInfo,
+  deleteBookInfo
 }

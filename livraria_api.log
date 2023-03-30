@@ -68,3 +68,9 @@
 2023-03-30T14:01:08.045Z [ livraria_api ] info GET /livro
 2023-03-30T14:01:32.183Z [ livraria_api ] info GET /livro
 2023-03-30T14:14:25.557Z [ livraria_api ] error PUT  - loggers is not defined
+2023-03-30T14:35:32.821Z [ livraria_api ] error PUT  - loggers is not defined
+2023-03-30T14:36:50.765Z [ livraria_api ] info PUT /livro/info - {"livroId":9,"descricao":"O livro aborda na teoria como funciona o Serviço Público nas esferas Legislativa, Judiciária e Executiva","paginas":90,"editora":"Editora GOV","avaliacoes":[]}
+2023-03-30T14:38:09.277Z [ livraria_api ] info DELETE /livro/info/9
+2023-03-30T14:39:07.123Z [ livraria_api ] info POST /livro/info - {"livroId":9,"descricao":"O livro aborda na teoria como funciona o Serviço Público","paginas":90,"editora":"Editora GOV","avaliacoes":[]}
+2023-03-30T14:39:10.323Z [ livraria_api ] info PUT /livro/info - {"livroId":9,"descricao":"O livro aborda na teoria como funciona o Serviço Público nas esferas Legislativa, Judiciária e Executiva","paginas":90,"editora":"Editora GOV","avaliacoes":[]}
+2023-03-30T14:39:13.148Z [ livraria_api ] info DELETE /livro/info/9

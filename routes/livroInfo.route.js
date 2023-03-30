@@ -7,6 +7,7 @@ const router = express.Router();
 
 router.post("/", LivroInfoController.createBookInfo);
 router.put("/", LivroInfoController.updateBookInfo);
+router.delete("/:id", LivroInfoController.deleteBookInfo);
 
 
 export default router;

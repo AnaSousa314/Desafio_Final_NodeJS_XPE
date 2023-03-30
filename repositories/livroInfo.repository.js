@@ -52,10 +52,21 @@ async function createBookInfoAvaliacoes(avaliacao, bookInfoId) {
   }
 }
 
+async function deleteBookInfo(bookId) {
+  try {
+    const mongoose = await connect();
+    const LivroInfo = mongoose.model("LivroInfo", LivroInfoSchema);
+    await LivroInfo.deleteOne({livroId: bookId});
+  } catch (error) {
+    throw error;
+  }
+}
+
 export default {
   createBookInfo,
   getBookInfo,
   getBookInfos,
   updateBookInfo,
-  createBookInfoAvaliacoes
+  createBookInfoAvaliacoes,
+  deleteBookInfo
 }
