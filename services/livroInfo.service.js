@@ -12,9 +12,6 @@ async function getBookInfo(bookId) {
   return await LivroInfoRepository.getBookInfo(bookId);
 }
 
-async function createBookInfoAvaliacoes(avaliacao, bookInfoId) {
-  await LivroInfoRepository.createBookInfoAvaliacoes(avaliacao, bookInfoId);
-}
 
 async function updateBookInfo(bookId) {
   await LivroInfoRepository.updateBookInfo(bookId);
@@ -24,11 +21,21 @@ async function deleteBookInfo(bookId) {
   await LivroInfoRepository.deleteBookInfo(bookId);
 }
 
+async function createBookReview(review, bookId) {
+  return await LivroInfoRepository.createBookReview(review, bookId);
+}
+
+async function deleteBookReview(bookId, index) {
+  await LivroInfoRepository.deleteBookReview(parseInt(bookId), index);
+}
+
 export default {
   createBookInfo,
   getBookInfo,
   getBookInfos,
-  createBookInfoAvaliacoes,
   updateBookInfo,
-  deleteBookInfo
+  deleteBookInfo,
+  createBookInfo,
+  createBookReview,
+  deleteBookReview
 }

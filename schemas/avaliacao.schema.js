@@ -5,7 +5,7 @@ const AvaliacaoSchema = new mongoose.Schema(
     nome: String,
     nota: String,
     avaliacao: String
-  }, { collection: "avaliacoes" }
+  }, { collection: "livroInfo" }
 );
 
 export default AvaliacaoSchema;

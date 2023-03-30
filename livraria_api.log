@@ -74,3 +74,42 @@
 2023-03-30T14:39:07.123Z [ livraria_api ] info POST /livro/info - {"livroId":9,"descricao":"O livro aborda na teoria como funciona o Serviço Público","paginas":90,"editora":"Editora GOV","avaliacoes":[]}
 2023-03-30T14:39:10.323Z [ livraria_api ] info PUT /livro/info - {"livroId":9,"descricao":"O livro aborda na teoria como funciona o Serviço Público nas esferas Legislativa, Judiciária e Executiva","paginas":90,"editora":"Editora GOV","avaliacoes":[]}
 2023-03-30T14:39:13.148Z [ livraria_api ] info DELETE /livro/info/9
+2023-03-30T15:01:21.140Z [ livraria_api ] info POST /livro/info - {"livroId":9,"descricao":"O livro aborda na teoria como funciona o Serviço Público","paginas":90,"editora":"Editora GOV","avaliacoes":[]}
+2023-03-30T15:01:24.585Z [ livraria_api ] info PUT /livro/info - {"livroId":9,"descricao":"O livro aborda na teoria como funciona o Serviço Público nas esferas Legislativa, Judiciária e Executiva","paginas":90,"editora":"Editora GOV","avaliacoes":[]}
+2023-03-30T15:07:13.078Z [ livraria_api ] info DELETE /livro/info/9
+2023-03-30T15:08:42.537Z [ livraria_api ] info POST /livro/info - {"livroId":9,"descricao":"O livro aborda na teoria como funciona o Serviço Público","paginas":90,"editora":"Editora GOV","avaliacoes":[]}
+2023-03-30T15:08:46.293Z [ livraria_api ] info PUT /livro/info - {"livroId":9,"descricao":"O livro aborda na teoria como funciona o Serviço Público nas esferas Legislativa, Judiciária e Executiva","paginas":90,"editora":"Editora GOV","avaliacoes":[]}
+2023-03-30T15:09:17.537Z [ livraria_api ] info DELETE /livro/info/9
+2023-03-30T15:09:48.135Z [ livraria_api ] info POST /livro/info - {"livroId":9,"descricao":"O livro aborda na teoria como funciona o Serviço Público","paginas":90,"editora":"Editora GOV","avaliacoes":[]}
+2023-03-30T15:09:50.124Z [ livraria_api ] info PUT /livro/info - {"livroId":9,"descricao":"O livro aborda na teoria como funciona o Serviço Público nas esferas Legislativa, Judiciária e Executiva","paginas":90,"editora":"Editora GOV","avaliacoes":[]}
+2023-03-30T15:10:02.473Z [ livraria_api ] info POST /livro/9/avaliacao
+2023-03-30T15:11:10.259Z [ livraria_api ] info DELETE /livro/info/9
+2023-03-30T15:11:22.678Z [ livraria_api ] info POST /livro/info - {"livroId":9,"descricao":"O livro aborda na teoria como funciona o Serviço Público","paginas":90,"editora":"Editora GOV","avaliacoes":[]}
+2023-03-30T15:11:25.353Z [ livraria_api ] info PUT /livro/info - {"livroId":9,"descricao":"O livro aborda na teoria como funciona o Serviço Público nas esferas Legislativa, Judiciária e Executiva","paginas":90,"editora":"Editora GOV","avaliacoes":[]}
+2023-03-30T15:11:38.913Z [ livraria_api ] info PUT /livro/info - {"livroId":9,"descricao":"O livro aborda na teoria como funciona o Serviço Público nas esferas Legislativa, Judiciária e Executiva","paginas":90,"editora":"Editora GOV","avaliacoes":[]}
+2023-03-30T15:11:43.412Z [ livraria_api ] info POST /livro/9/avaliacao
+2023-03-30T15:15:30.825Z [ livraria_api ] info POST /livro/9/avaliacao
+2023-03-30T15:21:06.287Z [ livraria_api ] info POST /livro/9/avaliacao
+2023-03-30T15:21:53.488Z [ livraria_api ] info POST /livro/9/avaliacao
+2023-03-30T15:29:01.118Z [ livraria_api ] info POST /livro/info/avaliacao - {"livroId":9,"avaliacoes":[{"nome":"João Silva","nota":5,"avaliacao":"Livro muito bom"},{"nome":"Maria do Carmo","nota":5,"avaliacao":"Livro Excelente"}]}
+2023-03-30T15:33:22.806Z [ livraria_api ] info POST /livro/info/avaliacao - {"livroId":9,"avaliacoes":[{"nome":"João Silva","nota":5,"avaliacao":"Livro muito bom"},{"nome":"Maria do Carmo","nota":5,"avaliacao":"Livro Excelente"}]}
+2023-03-30T15:33:51.697Z [ livraria_api ] info DELETE /livro/info/9
+2023-03-30T15:35:47.083Z [ livraria_api ] error POST  - next is not defined
+2023-03-30T15:36:17.639Z [ livraria_api ] error POST  - next is not defined
+2023-03-30T15:40:27.837Z [ livraria_api ] error POST  - next is not defined
+2023-03-30T15:41:35.303Z [ livraria_api ] info POST /livro/info/avaliacao - {"livroId":9,"avaliacoes":[{"nome":"João Silva","nota":5,"avaliacao":"Livro muito bom"},{"nome":"Maria do Carmo","nota":5,"avaliacao":"Livro Excelente"}]}
+2023-03-30T15:42:25.241Z [ livraria_api ] info POST /livro/info/avaliacao - {"livroId":9,"avaliacoes":[{"nome":"João Silva","nota":5,"avaliacao":"Livro muito bom"},{"nome":"Maria do Carmo","nota":5,"avaliacao":"Livro Excelente"}]}
+2023-03-30T15:42:52.467Z [ livraria_api ] info POST /livro/info/avaliacao - {"livroId":9,"avaliacoes":[{"nome":"João Silva","nota":5,"avaliacao":"Livro muito bom"},{"nome":"Maria do Carmo","nota":5,"avaliacao":"Livro Excelente"}]}
+2023-03-30T15:47:47.863Z [ livraria_api ] info POST /livro/info/avaliacao - {"livroId":9,"avaliacoes":[{"nome":"João Silva","nota":5,"avaliacao":"Livro muito bom"},{"nome":"Maria do Carmo","nota":5,"avaliacao":"Livro Excelente"}]}
+2023-03-30T15:51:44.859Z [ livraria_api ] info POST /livro/info/avaliacao - {"livroId":9,"avaliacoes":{"nome":"João Silva","nota":5,"avaliacao":"Livro muito bom"}}
+2023-03-30T15:55:04.704Z [ livraria_api ] info POST /livro/info/avaliacao - {"livroId":9,"avaliacoes":{"nome":"João Silva","nota":5,"avaliacao":"Livro muito bom"}}
+2023-03-30T16:00:11.821Z [ livraria_api ] error POST  - post is not defined
+2023-03-30T16:00:26.259Z [ livraria_api ] error POST  - Cannot read properties of null (reading 'avaliacoes')
+2023-03-30T16:01:45.404Z [ livraria_api ] error POST  - Cannot read properties of null (reading 'avaliacoes')
+2023-03-30T16:03:19.061Z [ livraria_api ] error POST  - Cannot read properties of null (reading 'avaliacoes')
+2023-03-30T16:04:06.000Z [ livraria_api ] error POST  - Cannot read properties of null (reading 'avaliacoes')
+2023-03-30T16:04:41.477Z [ livraria_api ] info POST /livro/info - {"livroId":9,"descricao":"O livro aborda na teoria como funciona o Serviço Público","paginas":90,"editora":"Editora GOV","avaliacoes":[]}
+2023-03-30T16:04:44.812Z [ livraria_api ] info PUT /livro/info - {"livroId":9,"descricao":"O livro aborda na teoria como funciona o Serviço Público nas esferas Legislativa, Judiciária e Executiva","paginas":90,"editora":"Editora GOV","avaliacoes":[]}
+2023-03-30T16:04:48.688Z [ livraria_api ] info POST /livro/info/avaliacao - {"livroId":9,"avaliacoes":{"nome":"João Silva","nota":5,"avaliacao":"Livro muito bom"}}
+2023-03-30T16:07:30.824Z [ livraria_api ] info POST /livro/9/avaliacao
+2023-03-30T16:28:49.651Z [ livraria_api ] info DELETE /livro/info/:id/avaliacao/:index

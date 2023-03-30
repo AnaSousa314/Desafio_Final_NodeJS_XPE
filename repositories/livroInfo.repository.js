@@ -42,16 +42,6 @@ async function updateBookInfo(bookInfo) {
   }
 }
 
-async function createBookInfoAvaliacoes(avaliacao, bookInfoId) {
-  try {
-    const bookInfo = await getBookInfo(bookInfoId);
-    bookInfo.avaliacoes.push(avaliacao);
-    await updateBookInfo(bookInfo);
-  } catch (error) {
-    throw error;
-  }
-}
-
 async function deleteBookInfo(bookId) {
   try {
     const mongoose = await connect();
@@ -62,11 +52,32 @@ async function deleteBookInfo(bookId) {
   }
 }
 
+async function createBookReview(review, bookId) {
+  try {
+    const avaliacao = await getBookInfo(bookId);
+    avaliacao.avaliacoes.push(review);
+    await updateBookInfo(avaliacao);
+  } catch (err) {
+    throw err;
+  }
+}
+
+async function deleteBookReview(bookId, index) {
+  try {
+    const bookInfo = await getBookInfo(bookId);
+    bookInfo.avaliacoes.splice(index, 1);
+    await updateBookInfo(bookInfo);
+  } catch (error) {
+    throw error;
+  }
+}
+
 export default {
   createBookInfo,
   getBookInfo,
   getBookInfos,
   updateBookInfo,
-  createBookInfoAvaliacoes,
-  deleteBookInfo
+  deleteBookInfo,
+  createBookReview,
+  deleteBookReview
 }

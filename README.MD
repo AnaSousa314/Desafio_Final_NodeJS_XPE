@@ -142,11 +142,11 @@ O desafio consiste em desenvolver uma API para controle de uma livraria online. 
            - Método HTTP e URL: DELETE - http://localhost:3000/livro/info/{livroId}
            - Parâmetros:  id do livro passado diretamente na URL, exemplo de um id de valor 15 passado na URL: http://localhost:3000/livro/info/15.
 
-       - [] 10 -Cadastrar uma avaliação:  
+       - [😎] 10 -Cadastrar uma avaliação:  
            - Método HTTP e URL: POST – http://localhost:3000/livro/{livroId}/avaliacao 
            - Observações: este endpoint deverá buscar no MongoDB o registro referente ao livro em questão pela propriedade “livroId” e inserir a avaliação no array de avaliações.
 
-       - [] 11 - Excluir uma avaliação:  
+       - [😎] 11 - Excluir uma avaliação:  
            - Método HTTP e URL: DELETE - http://localhost:3000/livro/{livroId}/avaliacao/{index}
            - Parâmetros: id do livro que terá a avaliação excluída e o índice da avaliação que será excluída (como é um array, o primeiro elemento é o 0). Exemplo de um id de livro 15 e índice da avaliação 0 passado na URL: http://localhost:3000/livro/15/avaliacao/0
            <br><br>  
