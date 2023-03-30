@@ -125,7 +125,7 @@ O desafio consiste em desenvolver uma API para controle de uma livraria online. 
            - Método HTTP e URL: GET - http://localhost:3000/autor 
            - Observações: este endpoint e o próximo devem retornar somente os dados do banco relacional, pois eles serão utilizados somente na listagem dos livros. Caso o usuário queira detalhar mais informações a respeito de um livro em específico, estes dados são obtidos no endpoint anterior.
 
-       - [] 06 - Consultar os livros cadastrados de um autor em específico:  
+       - [😎] 06 - Consultar os livros cadastrados de um autor em específico:  
            - Pegar o id do autor na URL e retornar uma lista de seus livros, sendo cada venda representado por um objeto JSON com todas as propriedades.
            - Método HTTP e URL: GET - http://localhost:3000/livro?autorId={autorId} 
            - Parâmetros: id do livro passado diretamente na URL, exemplo de um id de valor 15 passado na URL: http:/ localhost:3000/livro?autorId=15 (Sugestão: pode ser usada a mesma estrutura do endpoint do item 5, que consulta todos os livros, só que aqui nesse caso ele receberia um parâmetro para filtrar o autor).

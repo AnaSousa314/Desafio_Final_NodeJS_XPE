@@ -62,7 +62,7 @@ async function getBook(req, res, next) {
 async function getBooks(req, res, next) {
   try {
     res.status(200);
-    res.send(await LivroService.getBooks());
+    res.send(await LivroService.getBooks(req.query.autorId));
     logger.info("GET /livro")
   } catch (error) {
     next(error)

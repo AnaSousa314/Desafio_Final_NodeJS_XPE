@@ -33,7 +33,10 @@ async function getBook(bookId) {
   return book;
 }
 
-async function getBooks() {
+async function getBooks(authorId) {
+  if (authorId) {
+    return await LivroRespository.getBookByAuthorId(authorId);
+  }
   return await LivroRespository.getBooks();
 }
 

@@ -65,3 +65,5 @@
 2023-03-30T13:44:27.728Z [ livraria_api ] info GET /livro/1
 2023-03-30T13:50:11.424Z [ livraria_api ] error GET  - findAll is not defined
 2023-03-30T13:51:02.491Z [ livraria_api ] info GET /livro
+2023-03-30T14:01:08.045Z [ livraria_api ] info GET /livro
+2023-03-30T14:01:32.183Z [ livraria_api ] info GET /livro
